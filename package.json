@@ -1,0 +1,21 @@
+{
+  "name": "quiz-builder",
+  "version": "1.0.0",
+  "description": "Full-stack Quiz Builder application",
+  "scripts": {
+    "dev": "echo 'Please run backend and frontend separately:' && echo '  cd backend && npm run dev' && echo '  cd frontend && npm run dev'",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "build:all": "cd backend && npm run build && cd ../frontend && npm run build",
+    "setup": "cd backend && cp .env.example .env && npm install && npm run prisma:generate && npm run prisma:migrate && cd ../frontend && cp .env.example .env.local && npm install"
+  },
+  "keywords": [
+    "quiz",
+    "builder",
+    "typescript",
+    "nextjs",
+    "express",
+    "prisma"
+  ],
+  "author": "",
+  "license": "MIT"
+}
